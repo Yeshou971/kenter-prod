@@ -1,0 +1,47 @@
+/* =========================================================
+   FESTIVAL.CSS — styles propres à la page festival.html
+   ========================================================= */
+
+.festival-grid{
+  display:grid; grid-template-columns:1fr 0.9fr; gap:52px; align-items:start;
+  padding:64px 0;
+}
+@media (max-width:900px){ .festival-grid{grid-template-columns:1fr; gap:32px;} }
+@media (max-width:480px){ .festival-grid{padding:36px 0;} }
+.festival-grid .tagline{
+  font-family:'Bricolage Grotesque',sans-serif; color:var(--gold-2); font-size:18px; margin-top:10px;
+}
+.festival-grid p.desc{opacity:0.82; margin-top:16px; max-width:52ch;}
+.festival-facts{
+  margin-top:26px; display:grid; grid-template-columns:1fr 1fr; gap:14px 24px;
+}
+@media (max-width:480px){ .festival-facts{grid-template-columns:1fr; gap:12px;} }
+.festival-facts div{border-top:1px solid var(--line); padding-top:10px;}
+.festival-facts .label{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--teal); display:block; margin-bottom:4px;}
+.festival-facts .val{font-size:14.5px; color:var(--white);}
+.festival-choirs{margin-top:22px; font-size:13.5px; opacity:0.75;}
+.festival-choirs b{color:var(--cream); opacity:1; font-weight:600;}
+.festival-media{display:flex; flex-direction:column; gap:16px;}
+.festival-media img{width:100%; border-radius:12px; border:1px solid var(--line); display:block;}
+.festival-media .cap{font-family:'IBM Plex Mono',monospace; font-size:11px; opacity:0.5; letter-spacing:0.04em;}
+
+/* ===== POURQUOI CE FESTIVAL ===== */
+.why-section{border-top:1px solid var(--line); background:var(--ink-2);}
+.why-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:start;}
+@media (max-width:860px){ .why-grid{grid-template-columns:1fr;} }
+.why-grid h2{font-size:clamp(26px,3vw,34px); margin-top:14px;}
+.why-grid p.desc{opacity:0.82; margin-top:14px; max-width:58ch; font-size:14.5px;}
+.why-grid p.desc b{color:var(--gold-2); font-weight:600;}
+
+.oualiri-card{
+  border:1px solid var(--line); border-radius:12px; padding:26px;
+  background:var(--ink); text-align:center;
+}
+@media (max-width:480px){ .oualiri-card{padding:20px;} }
+.oualiri-card img{max-height:110px; margin:0 auto 16px; display:block;}
+.oualiri-card p{font-size:13px; opacity:0.75; text-align:left;}
+.oualiri-card .contact-list a{
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px; border-bottom:1px solid var(--line);
+  padding-bottom:10px; margin-top:10px; font-size:13px; text-align:left;
+}
+.oualiri-card .label{opacity:0.55; font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.05em; text-transform:uppercase;}

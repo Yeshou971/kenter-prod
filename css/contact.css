@@ -1,0 +1,32 @@
+/* =========================================================
+   CONTACT.CSS — styles propres à la page contact.html
+   ========================================================= */
+
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; margin-top:34px;}
+@media (max-width:800px){ .contact-grid{grid-template-columns:1fr; gap:36px;} }
+.contact-grid h2{font-size:clamp(26px,3.2vw,36px);}
+.contact-list{margin-top:22px; display:flex; flex-direction:column; gap:16px;}
+.contact-list a, .contact-list div{
+  display:flex; justify-content:space-between; border-bottom:1px solid var(--line);
+  padding-bottom:14px; font-size:14.5px; flex-wrap:wrap; gap:6px;
+}
+.contact-list .label{opacity:0.55; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;}
+.contact-list a:hover .label{color:var(--gold-2);}
+@media (max-width:420px){
+  .contact-list a, .contact-list div{flex-direction:column; gap:4px;}
+}
+.contact-note{
+  border:1px dashed var(--line); border-radius:8px; padding:18px 20px; font-size:13px; opacity:0.65; margin-top:22px;
+}
+form.mini{display:flex; flex-direction:column; gap:12px;}
+form.mini input, form.mini textarea{
+  background:var(--ink-2); border:1px solid var(--line); border-radius:6px; color:var(--cream);
+  font-family:'Inter',sans-serif; font-size:14px; padding:12px 14px; resize:vertical;
+}
+form.mini input:focus, form.mini textarea:focus{outline:2px solid var(--gold); border-color:var(--gold);}
+form.mini button{
+  align-self:flex-start; background:var(--gold); color:var(--ink); border:none;
+  font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:13px;
+  padding:13px 22px; border-radius:99px; cursor:pointer; transition:background .18s ease;
+}
+form.mini button:hover{background:var(--gold-2);}

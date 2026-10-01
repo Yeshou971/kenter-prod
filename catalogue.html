@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue — Kenter Prod · K Entertainment</title>
+  <meta name="description"
+    content="Le catalogue Kenter Prod : albums, singles, éditions et la collection de t-shirts Kè an Ka - light.">
+  <link rel="icon" href="logo-isole.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/catalogue.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="index.html">
+        <img src="logo-isole.png" alt="K Entertainment">
+        <span>KENTER PROD</span>
+      </a>
+      <div class="navlinks">
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html" class="active">Catalogue</a>
+        <a href="artistes.html">Artistes</a>
+        <a href="festival.html">Festival Kè An Ka</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="page-head wrap">
+      <p class="eyebrow">Catalogue</p>
+      <h1>Ce que produit le label</h1>
+      <p>Musique, écriture et boutique — chaque fiche renvoie vers la boutique officielle pour l'achat.</p>
+    </div>
+
+    <section id="catalogue">
+      <div class="wrap">
+        <div class="cat-head">
+          <div></div>
+          <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">Tout</button>
+            <button class="filter-btn" data-filter="musique">Musique</button>
+            <button class="filter-btn" data-filter="ecriture">Écriture</button>
+            <button class="filter-btn" data-filter="boutique">Boutique — T-shirts</button>
+          </div>
+        </div>
+
+        <div class="cat-grid" id="catGrid">
+
+          <div class="card" data-cat="musique">
+            <div class="card-media"><img src="assets/album-armes-honnies.jpg"
+                alt="Pochette de l'album Armes Honnies de Kenoa"></div>
+            <div class="card-top">
+              <h3>Album « Armes Honnies » — Kenoa</h3><span class="card-tag">Musique</span>
+            </div>
+            <p>L'album studio de Kenoa, Caribbean Voice du label.</p>
+            <div class="price">25,52 €</div>
+            <div class="card-extra-links">
+              <a class="pill-link" href="https://www.youtube.com/MsKenoa" target="_blank" rel="noopener">YouTube ↗</a>
+              <a class="pill-link" href="https://www.facebook.com/Kenoa.CaribbeanVoice/" target="_blank"
+                rel="noopener">Facebook ↗</a>
+            </div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/album-kenoa" target="_blank"
+              rel="noopener"><span>Voir la fiche</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="musique">
+            <div class="card-media"><img src="assets/single-diferans.jpg" alt="Pochette du single Diférans de Kenoa">
+            </div>
+            <div class="card-top">
+              <h3>Single « Diférans » — Kenoa</h3><span class="card-tag">Musique</span>
+            </div>
+            <p>Titre single de Kenoa, disponible à l'unité.</p>
+            <div class="price">12,25 €</div>
+            <div class="card-extra-links">
+              <a class="pill-link" href="https://www.youtube.com/MsKenoa" target="_blank" rel="noopener">YouTube ↗</a>
+            </div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/single-diferans-kenoa" target="_blank"
+              rel="noopener"><span>Voir la fiche</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="musique ecriture">
+            <div class="card-media"><img src="assets/pack-abena-kenoa.jpg"
+                alt="Pack Recueil d'Abena et Single de Kenoa"></div>
+            <div class="card-top">
+              <h3>Recueil d'Abena + Single de Kenoa</h3><span class="card-tag">Pack</span>
+            </div>
+            <p>Un pack réunissant l'écriture d'Abena et la musique de Kenoa.</p>
+            <div class="price">20,42 €</div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/recueil-d-abena-single-de-kenoa"
+              target="_blank" rel="noopener"><span>Voir la fiche</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="ecriture">
+            <div class="card-media"><img src="assets/pensees-intimes-abena.jpg"
+                alt="Couverture du recueil Pensées intimes d'Abena"></div>
+            <div class="card-top">
+              <h3>Pensées intimes — Abena</h3><span class="card-tag">Écriture</span>
+            </div>
+            <p>Recueil de textes et pensées intimes signé Abena.</p>
+            <div class="price">12,25 €</div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/pensees-intimes-abena" target="_blank"
+              rel="noopener"><span>Voir la fiche</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="boutique">
+            <div class="card-media"><img src="assets/tshirt-bleuroi-L.jpg"
+                alt="T-shirt Kè an Ka - light, bleu roi, taille L"></div>
+            <div class="card-top">
+              <h3>T-shirt Kè an Ka - light</h3><span class="card-tag">Boutique</span>
+            </div>
+            <p><span class="card-swatch" style="background:#1c3fb0;"></span>Bleu roi — taille L</p>
+            <div class="price">20,00 €</div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/t-shirts" target="_blank"
+              rel="noopener"><span>Voir la boutique</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="boutique">
+            <div class="card-media"><img src="assets/tshirt-turquoise-M.jpg"
+                alt="T-shirt Kè an Ka - light, bleu turquoise, taille M"></div>
+            <div class="card-top">
+              <h3>T-shirt Kè an Ka - light</h3><span class="card-tag">Boutique</span>
+            </div>
+            <p><span class="card-swatch" style="background:#1fb6c9;"></span>Bleu turquoise — taille M</p>
+            <div class="price">20,00 €</div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/t-shirts" target="_blank"
+              rel="noopener"><span>Voir la boutique</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="boutique">
+            <div class="card-media"><img src="assets/tshirt-violet-XXL.jpg"
+                alt="T-shirt Kè an Ka - light, violet, taille XXL"></div>
+            <div class="card-top">
+              <h3>T-shirt Kè an Ka - light</h3><span class="card-tag">Boutique</span>
+            </div>
+            <p><span class="card-swatch" style="background:#4b2e83;"></span>Violet — taille XXL</p>
+            <div class="price">22,00 €</div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/t-shirts" target="_blank"
+              rel="noopener"><span>Voir la boutique</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="boutique">
+            <div class="card-media"><img src="assets/tshirt-beige-XL.jpg"
+                alt="T-shirt Kè an Ka - light, beige, taille XL"></div>
+            <div class="card-top">
+              <h3>T-shirt Kè an Ka - light</h3><span class="card-tag">Boutique</span>
+            </div>
+            <p><span class="card-swatch" style="background:#c9a373;"></span>Beige — taille XL</p>
+            <div class="price">22,00 €</div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/t-shirts" target="_blank"
+              rel="noopener"><span>Voir la boutique</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="boutique">
+            <div class="card-media"><img src="assets/tshirt-jaune-12ans.jpg"
+                alt="T-shirt Kè an Ka - light, jaune, taille 12 ans"></div>
+            <div class="card-top">
+              <h3>T-shirt Kè an Ka - light (enfant)</h3><span class="card-tag">Boutique</span>
+            </div>
+            <p><span class="card-swatch" style="background:#f0b90b;"></span>Jaune — taille 12 ans</p>
+            <div class="price">19,00 €</div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/t-shirts" target="_blank"
+              rel="noopener"><span>Voir la boutique</span><span>↗</span></a>
+          </div>
+
+          <div class="card" data-cat="boutique">
+            <div class="card-media"><img src="assets/tshirt-rouge-10ans.jpg"
+                alt="T-shirt Kè an Ka - light, rouge, taille 10 ans"></div>
+            <div class="card-top">
+              <h3>T-shirt Kè an Ka - light (enfant)</h3><span class="card-tag">Boutique</span>
+            </div>
+            <p><span class="card-swatch" style="background:#c3202f;"></span>Rouge — taille 10 ans</p>
+            <div class="price">19,00 €</div>
+            <a class="card-link" href="https://kenter.sumupstore.com/product/t-shirts" target="_blank"
+              rel="noopener"><span>Voir la boutique</span><span>↗</span></a>
+          </div>
+
+        </div>
+        <p style="font-size:12.5px; opacity:0.55; margin-top:18px;">Collection « Kè an Ka - light » — d'autres photos et
+          coloris seront ajoutés dès qu'ils nous seront transmis.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="fbrand">
+        <img src="logo-isole.png" alt="" style="height:20px; opacity:0.8;">
+        <span>© 2026 Kenter Prod — K Entertainment</span>
+      </div>
+      <div class="flinks">
+        <a href="https://www.youtube.com/@k-entertainment7952" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://kenter.sumupstore.com/produits" target="_blank" rel="noopener">Boutique</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
