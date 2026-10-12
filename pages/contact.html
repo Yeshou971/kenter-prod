@@ -69,10 +69,11 @@
         <div>
           <p class="eyebrow">Écrivez-nous</p>
           <form class="mini" style="margin-top:16px;" action="https://formspree.io/f/xrpeajye" method="POST">
-            <input type="text" placeholder="Nom" required>
-            <input type="email" placeholder="Email" required>
-            <textarea rows="4" placeholder="Votre message" required></textarea>
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
             <button type="submit">Envoyer</button>
+            <p class="form-status" aria-live="polite"></p>
           </form>
         </div>
       </div>
