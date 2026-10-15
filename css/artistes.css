@@ -24,12 +24,12 @@
 .artiste-card .works a:hover{color:var(--gold-2);}
 .artiste-card .socials{display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;}
 .artiste-card .socials a{
-  font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.04em;
+  width:42px; height:42px; border-radius:50%;
+  display:inline-flex; align-items:center; justify-content:center;
   border:1px solid var(--line); color:var(--cream); opacity:0.85;
-  padding:6px 12px; border-radius:99px;
-  transition:border-color .18s ease, color .18s ease;
+  transition:border-color .18s ease, color .18s ease, transform .18s ease;
 }
-.artiste-card .socials a:hover{border-color:var(--gold-2); color:var(--gold-2); opacity:1;}
+.artiste-card .socials a:hover{border-color:var(--gold-2); color:var(--gold-2); opacity:1; transform:translateY(-2px);}
 
 /* ===== EN CONCERT ===== */
 .live-section{border-top:1px solid var(--line); background:var(--ink-2);}

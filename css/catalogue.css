@@ -59,3 +59,33 @@
   transition:border-color .18s ease, color .18s ease;
 }
 .pill-link:hover{border-color:var(--gold-2); color:var(--gold-2); opacity:1;}
+
+/* ===== CARTE LARGE : collection de t-shirts (6 coloris, 1 seule fiche) ===== */
+.card-wide{
+  grid-column:span 2;
+  display:grid; grid-template-columns:1.05fr 1fr; gap:26px; align-items:stretch;
+}
+.shirt-gallery{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:6px;
+  margin:-26px 0 -26px -26px; /* déborde sur le bord gauche de la carte */
+  border-radius:10px 0 0 10px; overflow:hidden; background:var(--ink-3);
+}
+.shirt-gallery img{width:100%; height:100%; object-fit:cover; display:block; aspect-ratio:3/4;}
+.card-wide .card-body{display:flex; flex-direction:column; gap:14px; padding:2px 0;}
+.variants{
+  list-style:none; margin:0; padding:0;
+  display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; font-size:13.5px;
+}
+.variants li{display:flex; align-items:center; white-space:nowrap;}
+.variants em{font-style:normal; opacity:0.55; margin-left:5px;}
+.card-wide .card-link{margin-top:auto;}
+
+@media (max-width:600px){
+  .card-wide{grid-column:auto; grid-template-columns:1fr; gap:18px;}
+  .shirt-gallery{margin:-26px -26px 0; border-radius:10px 10px 0 0;}
+  .variants{grid-template-columns:1fr 1fr; gap:8px 10px; font-size:13px;}
+}
+@media (max-width:480px){
+  .shirt-gallery{margin:-20px -20px 0;}
+}
+.card-wide .card-body p{flex-grow:0;}
